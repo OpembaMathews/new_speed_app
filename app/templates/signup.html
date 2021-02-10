@@ -1,0 +1,83 @@
+{% extends 'base.html'%}
+
+{% block title %}
+DeST-Park
+{% endblock %}
+
+
+{% block content %}
+
+
+  <div class="row">
+    <div class="col-4" >
+        <div class="limiter">
+            <div class="container-login100">
+                <div class="wrap-login100">
+                    <form class="login100-form validate-form p-l-55 p-r-55 p-t-178">
+                       
+                            <span class="login100-form-title">
+                                
+                                <img src="{{url_for ('static', filename = 'images/fast 1.svg')}}" alt="">
+                                DeKUT Speed Limiter
+                            </span>
+                            <h4 style="color: #016530;">SignUp</h4>
+                        <br>
+                        <label class="lead" for="exampleInputEmail1">Enter username</label>
+                        <div class="wrap-input100 validate-input m-b-16" data-validate="Please enter username">
+                            <input class="input100" type="text" name="username" placeholder="E.g mathews">
+                            <span class="focus-input100"></span>
+                        </div>
+                        <label class="lead" for="exampleInputEmail1">Enter Email address </label>
+                        <div class="wrap-input100 validate-input m-b-16" data-validate="Please enter Email Address">
+                            <input class="input100" type="text" name="email" placeholder="E.g example@gmail.com">
+                            <span class="focus-input100"></span>
+                        </div>
+                        <label class="lead" for="exampleInputEmail1">Enter Password</label>
+                        <div class="wrap-input100 validate-input" data-validate = "Please enter password">
+                            <input class="input100" type="password" name="pass" placeholder="password...">
+                            <span class="focus-input100"></span>
+                        </div>
+                        <br>
+                        <label class="lead" for="exampleInputEmail1">Confirm Password</label>
+                        <div class="wrap-input100 validate-input" data-validate = "Please confirm password">
+                            <input class="input100" type="password" name="pass" placeholder="password...">
+                            <span class="focus-input100"></span>
+                        </div>
+                       
+   
+              
+    
+                        <div class="container-login100-form-btn p-t-20">
+                            <button class="login100-form-btn">
+                                Sign Up
+                            </button>
+                        </div>
+                        <br>
+                        <hr>
+    
+                        <div class="flex-col-c p-t-20 p-b-40">
+                            <span class="txt1 p-b-9">
+                                Have an account?
+                            </span>
+    
+                            <a href="{{ url_for('login') }}" class="txt3 p-b-100">
+                                <button type="button" class="btn btn-outline-success rounded-pill">Login</button>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+  <div class="col-8 col_8bg container pt-4" style="text-align: center; font-size: 1.4rem;"> 
+   
+       <h1>DeKUT Speed Limiter</h1>
+       
+       <img src="{{ url_for ('static', filename = 'images/Mobile login-rafiki 1.png')}}"  alt="">
+  </div>
+  
+  </div>
+
+
+{% endblock %}

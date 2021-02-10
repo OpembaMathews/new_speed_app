@@ -1,0 +1,82 @@
+{% extends 'base.html'%}
+
+{% block title %}
+DeST-Park
+{% endblock %}
+
+
+{% block content %}
+
+
+  <div class="row">
+    <div class="col-4" >
+        <div class="limiter">
+            <div class="container-login100">
+                <div class="wrap-login100">
+                    <form class="login100-form validate-form p-l-55 p-r-55 p-t-178">
+                       
+                            <span class="login100-form-title">
+                                
+                                <img src="{{url_for ('static', filename = 'images/fast 1.svg')}}" alt="">
+                                DeKUT Speed Limiter
+                            </span>
+                            <h4 style="color: #016530;">Login</h4>
+                            <br>
+                            <label for="exampleInputEmail1">Enter Username</label>
+                        <div class="wrap-input100 validate-input m-b-16" data-validate="Please enter username">
+                            
+                            <input class="input100" type="text" name="username" placeholder="Username">
+                            <span class="focus-input100"></span>
+                        </div>
+                        <label for="exampleInputEmail1">Enter Password</label>
+                        <div class="wrap-input100 validate-input" data-validate = "Please enter password">
+                            
+                            <input class="input100" type="password" name="pass" placeholder="Password">
+                            <span class="focus-input100"></span>
+                        </div>
+    
+                       <br><br>
+    
+                        <div class="container-login100-form-btn">
+                            <button class="login100-form-btn">
+                                Sign in
+                            </button>
+                        </div>
+                        <br>
+                        <div class="text-center p-t-13 p-b-50">
+                            <span class="txt1">
+                                Forgot
+                            </span>
+    
+                            <a href="#" class="txt2 p-b-50">
+                                Username / Password?
+                            </a>
+                        </div>
+                        <hr>
+                        <div class="flex-col-c p-t-80 p-b-40">
+                            <span class="txt1 p-b-9">
+                                Don’t have an account?
+                            </span>
+    
+                            <a href="{{ url_for('signup') }}" class="txt3 p-b-100">
+                                <button type="button" class="btn btn-outline-success rounded-pill">Sign up now</button>
+                                
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+  <div class="col-8 col_8bg container pt-4" style="text-align: center; font-size: 1.4rem;"> 
+   
+       <h1>We Are Back !</h1>
+       
+       <img src="{{ url_for ('static', filename = 'images/Mobile login-rafiki 1.png')}}"   width = "80%"  alt="">
+  </div>
+  
+  </div>
+
+
+{% endblock %}
